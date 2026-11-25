@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Котичный сейл — 13 декабря, Пафос · Шкафопад</title>
+<meta name="description" content="Благотворительная гаражная распродажа 13 декабря, 11:00–14:00, GoDar театр-студия, Пафос. Вся выручка — приюту для кошек Tala Cats.">
+<meta property="og:title" content="Котичный сейл — 13 декабря, Пафос">
+<meta property="og:description" content="Гаражная распродажа для приюта Tala Cats. 11:00–14:00, GoDar театр-студия, Пафос.">
+<meta property="og:image" content="img/avatar.jpg">
+<link rel="icon" href="img/avatar.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&family=Unbounded:wght@600;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#FFF4E0;--sun:#F6C343;--terra:#E0673E;--sea:#2A9D8F;--navy:#1F3A5F;--pink:#F2A7B5}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--navy);font:400 18px/1.55 Nunito,system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:Unbounded,system-ui,sans-serif;line-height:1.1;margin:0}
+a{color:inherit}
+img{max-width:100%}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px;position:relative}
+
+/* лапки */
+.paw{width:1em;height:1em;display:inline-block;vertical-align:-.12em;fill:currentColor}
+.trail{position:absolute;pointer-events:none;z-index:0;color:var(--navy);opacity:.13}
+.trail svg{position:absolute;width:26px;height:26px}
+
+/* hero */
+.hero{padding:44px 0 34px;position:relative}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;z-index:1}
+.kicker{display:inline-flex;gap:8px;align-items:center;font-weight:800;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:var(--terra);margin-bottom:14px}
+h1{font-size:clamp(46px,8vw,84px);font-weight:900;letter-spacing:-.02em}
+h1 span{display:block;color:var(--terra)}
+.lead{font-size:20px;margin:20px 0 26px;max-width:30em}
+.date{display:inline-flex;flex-wrap:wrap;gap:10px}
+.pill{font-family:Unbounded,sans-serif;font-weight:800;font-size:18px;padding:12px 18px;border-radius:999px;background:var(--sun)}
+.pill.navy{background:var(--navy);color:var(--cream)}
+.art{position:relative}
+.art .ava{width:100%;aspect-ratio:1;object-fit:cover;border-radius:50%;display:block;box-shadow:0 0 0 10px var(--cream),0 0 0 14px var(--navy)}
+.art .boxcat{position:absolute;width:44%;left:-14%;bottom:-8%;transform:rotate(-6deg);filter:drop-shadow(0 6px 0 rgba(31,58,95,.12))}
+
+.btn{display:inline-flex;gap:10px;align-items:center;justify-content:center;font-family:Unbounded,sans-serif;font-weight:800;font-size:16px;text-decoration:none;padding:16px 24px;border-radius:14px;background:var(--navy);color:var(--cream);border:3px solid var(--navy);transition:transform .15s}
+.btn:hover{transform:translateY(-2px) rotate(-1deg)}
+.btn.ghost{background:transparent;color:var(--navy)}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+
+/* тыгыдык-полоса */
+.zoom{position:relative;height:120px;overflow:hidden}
+.zoom .wave{position:absolute;left:0;right:0;bottom:12px}
+.zoom .runner{position:absolute;bottom:16px;left:0;width:220px;animation:tygydyk 9s linear infinite}
+.zoom .runner img{display:block;width:100%;animation:hop .35s ease-in-out infinite alternate}
+@keyframes tygydyk{0%{transform:translateX(110vw)}55%,100%{transform:translateX(-260px)}}
+@keyframes hop{from{transform:translateY(0) rotate(-2deg)}to{transform:translateY(-10px) rotate(2deg)}}
+.wave{display:block;width:100%;height:28px;color:var(--sea)}
+
+section{padding:60px 0;position:relative}
+h2{font-size:clamp(28px,4.4vw,40px);font-weight:800;margin-bottom:26px}
+
+/* event */
+.event{background:var(--navy);color:var(--cream)}
+.event .grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:end}
+.facts{list-style:none;padding:0;margin:0;display:grid;gap:18px}
+.facts li{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start}
+.facts b{display:block;font-family:Unbounded,sans-serif;font-size:20px;font-weight:800;line-height:1.25}
+.ico{width:44px;height:44px;border-radius:12px;background:var(--sun);color:var(--navy);display:grid;place-items:center;font-size:22px}
+.cause{margin-top:26px;padding:18px 20px;border-radius:16px;background:var(--terra);font-size:19px}
+.cause b{font-family:Unbounded,sans-serif}
+.mapbox{position:relative;padding-top:70px}
+.mapbox .peek{position:absolute;top:2px;left:50%;width:62%;transform:translateX(-50%);z-index:2}
+.map{position:relative;border-radius:18px;overflow:hidden;min-height:320px;border:4px solid var(--sun);background:#25456f}
+.map iframe{width:100%;height:100%;min-height:320px;border:0;display:block}
+.event .btn{background:var(--sun);color:var(--navy);border-color:var(--sun)}
+.event .trail{color:var(--cream);opacity:.12}
+
+/* ways */
+.how-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px}
+.ways{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;position:relative;z-index:1}
+.card{position:relative;background:#fff;border:3px solid var(--navy);border-radius:20px;padding:22px 20px;box-shadow:6px 6px 0 var(--navy);transition:transform .2s}
+.card:nth-child(1){transform:rotate(-1deg)}.card:nth-child(3){transform:rotate(1deg)}
+.card:hover{transform:rotate(0) translateY(-4px)}
+.card .stamp{position:absolute;right:14px;top:14px;width:34px;height:34px;color:var(--terra);opacity:0;transform:scale(.4) rotate(-20deg);transition:.25s cubic-bezier(.3,1.6,.5,1)}
+.card:hover .stamp{opacity:.9;transform:scale(1) rotate(-12deg)}
+.card .ico{margin-bottom:14px}
+.card:nth-child(2) .ico{background:var(--pink)}
+.card:nth-child(3) .ico{background:var(--sea);color:var(--cream)}
+.card:nth-child(4) .ico{background:var(--terra);color:var(--cream)}
+.card h3{font-size:18px;font-weight:800;margin-bottom:8px}
+.card p{margin:0;font-size:16px}
+
+.cash{display:grid;grid-template-columns:170px 1fr;gap:22px;align-items:center;margin-top:44px;padding:16px 26px 16px 16px;border-radius:22px;background:var(--sun);font-size:19px}
+.cash img{width:170px;margin:-46px 0 -10px}
+.cash b{font-family:Unbounded,sans-serif;font-size:22px;display:block;margin-bottom:4px}
+
+/* rails */
+.rails{background:var(--pink);overflow:hidden}
+.rails .wrap{display:grid;grid-template-columns:.95fr 1.05fr;gap:30px;align-items:center}
+.rails img{width:100%;transform-origin:50% 8%;animation:swing 3.2s ease-in-out infinite alternate}
+@keyframes swing{from{transform:rotate(-1.5deg)}to{transform:rotate(1.5deg)}}
+.rails p{margin:0 0 18px;font-size:19px;max-width:36em}
+
+/* en */
+.en{border-top:3px dashed var(--navy)}
+.en p{max-width:40em}
+
+footer{padding:10px 0 46px;text-align:center;position:relative}
+footer img{width:300px;display:block;margin:0 auto 8px}
+footer p{margin:0;font-size:15px}
+
+@media (prefers-reduced-motion:reduce){
+  .zoom .runner,.zoom .runner img,.rails img{animation:none}
+  .zoom .runner{left:auto;right:6%;transform:none}
+}
+@media (max-width:860px){
+  .hero .wrap,.event .grid,.rails .wrap{grid-template-columns:1fr}
+  .art{max-width:340px;margin:0 auto 20px;order:-1}
+  .ways{grid-template-columns:1fr 1fr}
+  .how-head .sleepy-mini{display:none}
+}
+@media (max-width:520px){
+  body{font-size:17px}
+  .hero{padding-top:28px}
+  .art{max-width:280px}
+  .ways{grid-template-columns:1fr}
+  .card{transform:none!important}
+  .btn{width:100%}
+  .zoom{height:96px}.zoom .runner{width:160px}
+  .cash{grid-template-columns:1fr;text-align:center;padding:16px}
+  .cash img{margin:-60px auto 0;width:150px}
+  footer img{width:240px}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="paw" viewBox="0 0 64 64">
+    <ellipse cx="32" cy="42" rx="15" ry="13"/>
+    <ellipse cx="13" cy="26" rx="6.5" ry="8.5" transform="rotate(-20 13 26)"/>
+    <ellipse cx="25" cy="15" rx="6.5" ry="9"/>
+    <ellipse cx="39" cy="15" rx="6.5" ry="9"/>
+    <ellipse cx="51" cy="26" rx="6.5" ry="8.5" transform="rotate(20 51 26)"/>
+  </symbol>
+</svg>
+
+<header class="hero">
+  <div class="trail" id="trail-hero" style="inset:0"></div>
+  <div class="wrap">
+    <div>
+      <span class="kicker"><svg class="paw"><use href="#paw"/></svg> Шкафопад в Пафосе · гаражная распродажа</span>
+      <h1>Котичный <span>сейл</span></h1>
+      <p class="lead">Открываем шкафы — и оттуда сыплются платья, книги, чашки и прочие сокровища. Забирайте за пару евро, а вся выручка пойдёт в приют для кошек Tala Cats.</p>
+      <div class="date">
+        <span class="pill">13 декабря</span>
+        <span class="pill navy">11:00–14:00</span>
+      </div>
+      <div class="btns">
+        <!-- TODO: вставить ссылку на Telegram-чат -->
+        <a class="btn" href="#chat" id="chat-top">Чат в Telegram</a>
+        <a class="btn ghost" href="#event">Где и когда</a>
+      </div>
+    </div>
+    <div class="art">
+      <img class="ava" src="img/avatar.jpg" alt="Распахнутый синий шкаф, из которого вылетают платье, шляпа, книги, чашка и кеды">
+      <img class="boxcat" src="img/cats/box.webp" alt="Чёрный котик в огромной соломенной шляпе сидит в коробке с одеждой">
+    </div>
+  </div>
+</header>
+
+<div class="zoom" aria-hidden="true">
+  <svg class="wave" viewBox="0 0 1200 28" preserveAspectRatio="none"><path d="M0 14 Q 50 0 100 14 T 200 14 T 300 14 T 400 14 T 500 14 T 600 14 T 700 14 T 800 14 T 900 14 T 1000 14 T 1100 14 T 1200 14" fill="none" stroke="currentColor" stroke-width="6"/></svg>
+  <div class="runner"><img src="img/cats/zoomies.webp" alt=""></div>
+</div>
+
+<section class="event" id="event">
+  <div class="trail" id="trail-event" style="inset:0"></div>
+  <div class="wrap">
+    <h2>Где и когда</h2>
+    <div class="grid">
+      <div>
+        <ul class="facts">
+          <li><span class="ico">📅</span><div><b>Воскресенье, 13 декабря</b>с 11:00 до 14:00</div></li>
+          <li><span class="ico">📍</span><div><b>GoDar театр-студия</b>Themis Court, Nikodimou Mylona 12, Paphos 8046</div></li>
+          <li><span class="ico">💶</span><div><b>Оплата наличными</b>так быстрее и проще для всех</div></li>
+        </ul>
+        <div class="cause">💛 Вся выручка уйдёт в <b>приют для кошек Tala Cats</b></div>
+        <div class="btns"><a class="btn" href="https://maps.google.com/?cid=14855793004858708663" target="_blank" rel="noopener"><svg class="paw"><use href="#paw"/></svg> Открыть в картах</a></div>
+      </div>
+      <div class="mapbox">
+        <img class="peek" src="img/cats/peek.webp" alt="Полосатый котик выглядывает из-за карты">
+        <div class="map">
+          <iframe title="GoDar театр-студия на карте" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://maps.google.com/maps?q=GoDar%20%D1%82%D0%B5%D0%B0%D1%82%D1%80-%D1%81%D1%82%D1%83%D0%B4%D0%B8%D1%8F%2C%20Nikodimou%20Mylona%2012%2C%20Paphos&z=16&output=embed"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="trail" id="trail-how" style="inset:0"></div>
+  <div class="wrap">
+    <h2>Как поучаствовать</h2>
+    <div class="ways">
+      <div class="card"><svg class="stamp"><use href="#paw"/></svg><div class="ico">🛍</div><h3>Прийти за покупками</h3><p>Одежда, обувь, книги, посуда, декор и много неожиданного. Берите друзей.</p></div>
+      <div class="card"><svg class="stamp"><use href="#paw"/></svg><div class="ico">👗</div><h3>Принести вещи</h3><p>Чистые и в хорошем состоянии. Лучше заранее — напишите в чат, — но можно и в сам день, к 11:00.</p></div>
+      <div class="card"><svg class="stamp"><use href="#paw"/></svg><div class="ico">🧥</div><h3>Одолжить стойку</h3><p>Нужны вешалки-рейлы на один день. Вернём сразу после распродажи.</p></div>
+      <div class="card"><svg class="stamp"><use href="#paw"/></svg><div class="ico">🙋</div><h3>Помочь в день</h3><p>Разложить вещи, постоять на кассе, убрать в конце. Пишите в чат.</p></div>
+    </div>
+    <div class="cash">
+      <img src="img/cats/cash.webp" alt="Довольная трёхцветная кошка с веером евро">
+      <div><b>Захватите наличные</b>На распродаже лучше платить наличными — мелкие купюры и монеты особенно кстати. Кассирша уже готова.</div>
+    </div>
+  </div>
+</section>
+
+<section class="rails" id="rails">
+  <div class="wrap">
+    <img src="img/cats/rail.webp" alt="Котик висит на вешалке-стойке, вокруг качаются плечики и розовый шарф">
+    <div>
+      <h2>Ищем вешалки-стойки</h2>
+      <p>Нам нужны рейлы для одежды на один день — котики уже проверили, держат отлично. Одолжите стойку: заберём или примем у вас до начала и вернём в целости сразу после.</p>
+      <a class="btn" href="#chat" id="chat-rails">Написать в чат</a>
+    </div>
+  </div>
+</section>
+
+<section class="en" id="en" lang="en">
+  <div class="wrap">
+    <h2>In English</h2>
+    <p><b>Kitty Sale</b> is a charity garage sale by <b>Shkafopad</b> (“wardrobe-fall”), a Paphos garage sale community. <b>Sunday, 13 December, 11:00–14:00</b>, GoDar Theatre Studio, Nikodimou Mylona 12. All proceeds go to the <b>Tala Cats</b> shelter. Come shopping (cash preferred), bring items you no longer need, or lend us a clothing rail for the day — we'll return it right after.</p>
+    <div class="btns"><a class="btn" href="#chat" id="chat-en">Join the Telegram chat</a></div>
+  </div>
+</section>
+
+<footer>
+  <svg class="wave" viewBox="0 0 1200 28" preserveAspectRatio="none" aria-hidden="true" style="margin-bottom:26px"><path d="M0 14 Q 50 0 100 14 T 200 14 T 300 14 T 400 14 T 500 14 T 600 14 T 700 14 T 800 14 T 900 14 T 1000 14 T 1100 14 T 1200 14" fill="none" stroke="currentColor" stroke-width="6"/></svg>
+  <img src="img/cats/sleepy.webp" alt="Рыжий котик спит на стопке свитеров">
+  <p>Шкафопад в Пафосе — гаражные распродажи с добрым смыслом <svg class="paw"><use href="#paw"/></svg></p>
+</footer>
+
+<script>
+// цепочки лапок: котик прошёлся по странице
+function trail(id, pts){
+  const box=document.getElementById(id); if(!box) return;
+  pts.forEach(([x,y,r],i)=>{
+    const s=document.createElementNS('http://www.w3.org/2000/svg','svg');
+    s.setAttribute('viewBox','0 0 64 64');
+    s.innerHTML='<use href="#paw"/>';
+    s.style.left=x+'%'; s.style.top=y+'%';
+    s.style.transform='rotate('+r+'deg)'+(i%2?' translateX(14px)':'');
+    s.style.fill='currentColor';
+    box.appendChild(s);
+  });
+}
+const walk=(x0,y0,x1,y1,n,r)=>Array.from({length:n},(_,i)=>[x0+(x1-x0)*i/(n-1),y0+(y1-y0)*i/(n-1),r]);
+trail('trail-hero', walk(2,88,40,62,8,70));
+trail('trail-event', walk(60,8,96,30,6,105));
+trail('trail-how', walk(70,4,98,18,5,95).concat(walk(-2,70,10,96,4,20)));
+</script>
+</body>
+</html>
