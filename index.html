@@ -67,8 +67,8 @@ h2{font-size:clamp(28px,4.4vw,40px);font-weight:800;margin-bottom:26px}
 .ico{width:44px;height:44px;border-radius:12px;background:var(--sun);color:var(--navy);display:grid;place-items:center;font-size:22px}
 .cause{margin-top:26px;padding:18px 20px;border-radius:16px;background:var(--terra);font-size:19px}
 .cause b{font-family:Unbounded,sans-serif}
-.mapbox{position:relative;padding-top:70px}
-.mapbox .peek{position:absolute;top:2px;left:50%;width:62%;transform:translateX(-50%);z-index:2}
+.mapbox{position:relative;margin-top:120px}
+.mapbox .peek{position:absolute;bottom:calc(100% - 9px);left:50%;width:min(62%,340px);transform:translateX(-50%);z-index:2;pointer-events:none}
 .map{position:relative;border-radius:18px;overflow:hidden;min-height:320px;border:4px solid var(--sun);background:#25456f}
 .map iframe{width:100%;height:100%;min-height:320px;border:0;display:block}
 .event .btn{background:var(--sun);color:var(--navy);border-color:var(--sun)}
